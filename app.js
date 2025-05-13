@@ -22,5 +22,4 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500).json({ error: err.message });
 });
 
-// Start the Express server
-app.listen(port, () => console.log(`Server up and running on port ${port}`));
+module.exports = app;
